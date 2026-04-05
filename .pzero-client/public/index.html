@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>PZero AI Studio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mammoth/1.6.0/mammoth.browser.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.min.js"></script>
+    <script>pdfjsLib.GlobalWorkerOptions.workerSrc = 'https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.worker.min.js';</script>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body class="bg-zinc-950 text-zinc-100">
+
+    <div class="app-viewport flex flex-col h-screen overflow-hidden">
+        <!-- Навигация -->
+        <div id="nav-container" class="shrink-0"></div>
+
+        <div class="flex flex-1 overflow-hidden">
+            <!-- ЦЕНТРАЛЬНАЯ ЧАСТЬ -->
+            <div class="flex-1 relative flex flex-col overflow-hidden bg-zinc-900">
+                
+                <div id="view-dashboard" class="flex-1 hidden">
+                    <main class="max-w-6xl mx-auto px-10 pt-12 pb-12" id="dashboard-content"></main>
+                </div>
+
+                <div id="view-army" class="flex-1 relative overflow-hidden hidden">
+                    <div id="army-canvas" class="absolute inset-0"></div>
+                </div>
+
+                <!-- Контейнер для Терминала (Консоли) -->
+                <div id="console-wrapper" class="shrink-0 relative z-[100]"></div>
+            </div>
+
+            <!-- ПРАВАЯ ПАНЕЛЬ (Параметры) -->
+            <div id="inspector-container" class="w-[360px] border-l border-zinc-800 bg-zinc-950 hidden shrink-0 overflow-y-auto relative z-[200]"></div>
+        </div>
+    </div>
+
+    <!-- Контейнер для Модалки -->
+    <div id="overlay-container"></div>
+
+    <script type="module">
+        import { App } from '/js/App.js';
+        window.app = new App();
+    </script>
+</body>
+</html>

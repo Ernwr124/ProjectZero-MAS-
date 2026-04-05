@@ -1,0 +1,19 @@
+<svg width="44" height="44" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <!-- Background -->
+    <rect width="44" height="44" rx="12" fill="white"/>
+    
+    <!-- Unit 1 (Input) -->
+    <circle cx="13" cy="13" r="6" stroke="black" stroke-width="2.5" fill="white"/>
+    
+    <!-- Unit 2 (Process) -->
+    <circle cx="31" cy="13" r="7" fill="#e4e4e7"/>
+    
+    <!-- Unit 3 (Connection) -->
+    <circle cx="13" cy="31" r="7" fill="#e4e4e7"/>
+    
+    <!-- Unit 4 (Output) -->
+    <rect x="24" y="24" width="14" height="14" rx="3" fill="black"/>
+    
+    <!-- Center Dots -->
+    <circle cx="22" cy="22" r="1.5" fill="black" opacity="0.1"/>
+</svg>

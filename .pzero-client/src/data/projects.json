@@ -1,0 +1,39 @@
+[
+  {
+    "id": "1775245396544",
+    "name": "разработчики",
+    "nodes": [
+      {
+        "id": "AX-3853",
+        "name": "arch",
+        "x": 460,
+        "y": 80,
+        "type": "GPT_OSS",
+        "directive": "you are a architecture"
+      },
+      {
+        "id": "AX-4669",
+        "name": "dev",
+        "x": 700,
+        "y": 240,
+        "type": "GPT_OSS",
+        "directive": "you are a developer"
+      }
+    ],
+    "edges": [],
+    "createdAt": "2026-04-03T19:43:16.544Z",
+    "connections": [
+      {
+        "fromId": "AX-3853",
+        "toId": "AX-4669"
+      }
+    ]
+  },
+  {
+    "id": "0ecb8702",
+    "name": "маркетинг",
+    "nodes": [],
+    "edges": [],
+    "createdAt": "2026-04-03T20:03:05.959Z"
+  }
+]
