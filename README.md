@@ -64,4 +64,27 @@
 2.  **Precision Styling:** Используй только `Zinc` палитру для Noir-эффекта. Все отступы должны быть кратны 4 или 20 (шаг сетки).
 3.  **Event Handling:** Все глобальные слушатели (мышь, кнопки) должны инициализироваться в методе `setupCanvasControls` или `setupKeyboardControls` внутри `App.js`.
 
+## 📥 Installation & Running
+
+Для быстрой установки и запуска проекта выполните следующие команды:
+
+```bash
+# 1. Клонируйте репозиторий (папка .pzero-client будет скрыта автоматически)
+git clone https://github.com/Ernwr124/ProjectZero-MAS-.git
+cd ProjectZero-MAS-/.pzero-client
+
+# 2. Установите зависимости
+npm install
+
+# 3. Установите команду pzero глобально (чтобы запускать просто вводом pzero)
+sudo npm link
+
+# 4. Запуск студии
+pzero
+```
+
+После запуска студия будет доступна по адресу: `http://localhost:3333`
+
+---
+
 *Создано командой ProjectZero AI. Будущее автономно.*
