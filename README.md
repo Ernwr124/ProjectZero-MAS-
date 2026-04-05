@@ -1,6 +1,8 @@
 # 🌌 ProjectZero (pzero) — AI Orchestration Studio
 
-**Mission:** Создание локальной, высокопроизводительной среды для визуального проектирования и управления армиями автономных ИИ-агентов. 
+**Official Website:** [www.pzero.kz](https://www.pzero.kz)
+
+**Mission:** Создание локальной, высокопроизводительной среды для визуального проектирования и управления армиями автономных ИИ-агентов.
 **Design Philosophy:** "Technical Noir" — минимализм, точность, модульность.
 
 ---
@@ -10,14 +12,14 @@
 - **Frontend:** Single Page Application (SPA).
 - **Logic:** Vanilla JS (ES Modules) — без тяжелых фреймворков.
 - **Styling:** Tailwind CSS + Custom Engineering CSS.
-- **Data:** Flat JSON files storage (`src/data/`).
+- **Data:** Flat JSON files storage (External `~/.pzero/`).
 
 ---
 
 ## 📂 Project Structure (Modular Architecture)
 Проект строго разделен на независимые компоненты для удобства редактирования:
 
-### 🎨 Client-Side (`client/public/js/`)
+### 🎨 Client-Side (`.pzero-client/public/js/`)
 - `App.js`: **Оркестратор.** Управляет роутингом, глобальным состоянием, событиями мыши/клавиатуры и автосохранением.
 - `components/`:
     - `Navbar.js`: Умная навигация с Breadcrumbs (`PZERO / AI_AGENTS / ...`).
@@ -30,7 +32,7 @@
     - `Inspector.js`: Боковая панель настройки параметров конкретного агента.
     - `Logo.js`: Интерактивный геометрический логотип (Legion Grid).
 
-### 🖥 Backend-Side (`client/bin/pzero.js`)
+### 🖥 Backend-Side (`.pzero-client/bin/pzero.js`)
 - Реализует API для CRUD операций:
     - `GET /api/projects`: Список всех армий.
     - `GET /api/projects/:id`: Загрузка конфигурации конкретной армии.

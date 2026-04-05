@@ -12,7 +12,9 @@ export const Navbar = (props) => {
                 </div>
                 
                 <div class="flex items-center overflow-x-auto no-scrollbar py-2">
-                    <span class="breadcrumb-item text-zinc-500">PROJECTZERO</span>
+                    <a href="https://www.pzero.kz" target="_blank" class="breadcrumb-item text-emerald-500 hover:text-emerald-400 transition-colors mr-2">PZERO.KZ</a>
+                    <span class="breadcrumb-separator text-zinc-700">/</span>
+                    <span class="breadcrumb-item text-zinc-500 ml-2">PROJECTZERO</span>
                     <span class="breadcrumb-separator text-zinc-700">/</span>
                     <span class="breadcrumb-item text-zinc-500">AI_AGENTS</span>
                     <span class="breadcrumb-separator text-zinc-700">/</span>
