@@ -64,4 +64,4 @@
 2.  **Precision Styling:** Используй только `Zinc` палитру для Noir-эффекта. Все отступы должны быть кратны 4 или 20 (шаг сетки).
 3.  **Event Handling:** Все глобальные слушатели (мышь, кнопки) должны инициализироваться в методе `setupCanvasControls` или `setupKeyboardControls` внутри `App.js`.
 
-*Created by Gemini CLI. The future is autonomous.*
+*Создано командой ProjectZero AI. Будущее автономно.*
