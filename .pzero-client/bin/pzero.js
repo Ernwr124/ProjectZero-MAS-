@@ -176,7 +176,7 @@ async function executeGraph(executionId, prompt, nodes, connections, onStart, on
         if (node.type === 'ALEM_AI') {
           if (node.alemTask === 'IMAGE') {
             const finalPrompt = prompt + (inputFromOthers ? " " + inputFromOthers : "");
-            const key = 'sk-UPOUsAaFH6TQWy1YRhzumg'; 
+            const key = 'sk-.......'; 
             const response = await axios.post('https://llm.alem.ai/v1/images/generations', {
               model: "text-to-image", prompt: finalPrompt.substring(0, 1000), size: "720x720" 
             }, { headers: { 'Authorization': `Bearer ${key}`, 'Content-Type': 'application/json' } });
