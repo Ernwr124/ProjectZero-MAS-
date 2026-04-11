@@ -189,7 +189,7 @@ async function executeGraph(executionId, prompt, nodes, connections, onStart, on
           } else {
             const response = await fetch('https://llm.alem.ai/chat/completions', {
               method: 'POST',
-              headers: { 'Authorization': `Bearer ${node.alemKey || 'sk-q-rZTaq5btkySCqGHIccbg'}`, 'Content-Type': 'application/json' },
+              headers: { 'Authorization': `Bearer ${node.alemKey || 'sk-......'}`, 'Content-Type': 'application/json' },
               body: JSON.stringify({ 
                   model: node.alemModel || "gpt-oss", 
                   messages: [{ role: "system", content: systemPrompt }, { role: "user", content: prompt }], 
@@ -587,7 +587,7 @@ fastify.delete('/api/projects/:id/files/:name', async (req) => {
 // ARCHITECT AI API
 fastify.post('/api/ai/architect', async (req, reply) => {
   const { prompt, currentProjectState } = req.body;
-  const ALEM_KEY = 'sk-q-rZTaq5btkySCqGHIccbg';
+  const ALEM_KEY = 'sk-......';
   
   const systemPrompt = `ТЫ — АРХИТЕКТОР PZERO. ТВОЯ ЗАДАЧА — ПОМОГАТЬ ПОЛЬЗОВАТЕЛЮ СТРОИТЬ ИИ-АРМИИ.
 ТЫ МОЖЕШЬ УПРАВЛЯТЬ ХОЛСТОМ, СОЗДАВАТЬ АГЕНТОВ, СОЕДИНЯТЬ ИХ И ИСКАТЬ ФАЙЛЫ.
